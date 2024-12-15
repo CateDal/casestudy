@@ -1,0 +1,192 @@
+/* Fixed Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+/* About container */
+.about-container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc);
+}
+
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 800px;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.about-image {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.carousel .slide img {
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        font-size: 1em;
+    }
+
+    .carousel .slide img {
+        max-height: 300px;
+    }
+}
+
+/* About boxes container */
+.about-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about-box {
+    width: 30%; /* Adjust to fit images and titles */
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    justify-content: space-between; /* Ensure spacing between image and title */
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .about-box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 80px; /* Full width for smaller screens */
+        height: inherit;
+        margin-bottom: 20px;
+    }
+}
+/*close buttn */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red; /* Optional: Change color on hover */
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-image {
+    width: 100px;
+    max-width: 600px; /* Adjust to your needs */
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-description {
+    margin-top: 20px;
+    text-align: center; /* Adjust as needed */
+}
+
+.modal-description h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-description p {
+    font-size: 1em;
+    text-align: center;
+}

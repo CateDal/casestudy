@@ -1,0 +1,48 @@
+/* MapData.css */
+
+/* The container for the map, set to take up the full height of the viewport */
+.map-container {
+    width: 100%;
+    height: 100vh; /* Make the map fill the entire screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+/* Styling the title of the map */
+.map-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Ensure the map takes up all available space */
+.leaflet-container {
+    width: 90%;
+    height: 80%;  /* Adjust height based on your preference */
+    border-radius: 10px; /* Optional: Rounded corners for the map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Soft shadow */
+}
+
+/* Styling for the map tooltips */
+.custom-tooltip {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    color: #333; /* Dark text for readability */
+    font-size: 14px; /* Adjust font size */
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the tooltip */
+    max-width: 200px; /* Ensure tooltips do not get too large */
+    text-align: center; /* Center the content in the tooltip */
+}
+
+/* Add some margin for the map container if you want spacing around it */
+.map-container {
+    margin: 0 auto;
+    padding: 10px;
+}

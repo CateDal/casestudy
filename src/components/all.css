@@ -1,0 +1,348 @@
+.app-container {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #d8f3dc);
+	color: #333;
+  }
+  
+  .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3px 2rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 96%;
+  }
+
+  .about-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3px 2rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 96%;
+}
+
+  .title{
+	text-align: left;
+	margin-left: 5%;
+	color: #05223e;
+	position: absolute;
+
+  }
+  
+  .logo img {
+	height: 50px;
+	width: 50px;
+  }
+  
+  .nav a {
+	margin: 0 1rem;
+	text-decoration: none;
+	color: #05223e;
+	font-weight: bold;
+	
+  }
+  .nav a:hover, .nav a:active {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #05223e;
+	padding: 24px 5px;
+  }
+  .main-section {
+	padding: 2rem;
+  }
+  
+  .top-section .large {
+	height: 320px;
+	background: #ccc;
+	width: 1304px;
+	margin: 29px 0px 1rem -31px;
+  }
+  .banner{
+	width: 1304px;
+  	height:320px;
+
+
+	
+  }
+  
+  .bottom-section {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  .bottom-section .medium {
+	flex: 1;
+	height: 150px;
+	background: #ccc;
+  }
+  
+  .bottom-section .small {
+	flex: 0.5;
+	height: 150px;
+	background: #ccc;
+  }
+  
+  .records-section {
+	padding: 2rem;
+	background: #fff;
+	border-radius: 8px;
+	margin: 1rem 2rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .records-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+
+  }
+  .recorh2 {
+    width: 120%;
+
+  }
+  .search-bar {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+  }
+  
+  .search-bar input {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .search-bar button {
+	background: #28a745;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .records-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+	text-align: center;
+  }
+  
+  .records-table th, .records-table td {
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+
+  }
+  .records-table td {
+	text-align: left;
+  }
+
+  
+  .records-table th {
+	background: #f8f9fa;
+	text-align: center;
+  }
+  /*add*/
+  .adddata{
+	background-color: #05223e;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+	margin-left: 1020px;
+	margin-right: -90px;
+	border-radius: 5px;
+	margin-bottom: -15px;
+  }
+  
+  .search{
+	margin-left: -220px; 
+	margin-top: -110px;
+	width: 300px;
+}
+.search-bar input {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+
+  .records-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+	text-align: center;
+  }
+  
+  .records-table th, .records-table td {
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	
+  }
+  .records-table td {
+	text-align: left;
+  }
+
+  
+  .records-table th {
+	background: #f8f9fa;
+	text-align: center;
+
+  }
+
+  /* Modal Styles */
+.modal-content {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 80%;
+	max-width: 900px; /* Increase width */
+	max-height: 80vh;
+	overflow-y: auto;
+	z-index: 1000;
+  }
+  
+  /* Form Layout */
+  .add-form {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  
+  .add-form label {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	color: #555;
+	width: 100%; /* Ensures labels take full width */
+  }
+  
+  .add-form input,
+  .add-form select,
+  .add-form textarea {
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 14px;
+	width: 100%; /* Ensure inputs also take full width */
+  }
+  .add-form select, .add-form select:focus{
+	width: 106%;
+  }
+  .add-form .column {
+	flex: 1;
+	width:400px; /* Set a minimum width for columns */
+	gap: 20px;
+  }
+  .column{
+	padding: 15px;
+  }
+  .add-form .column label {
+	width: auto;
+  }
+  
+  .add-form input:focus,
+  .add-form select:focus,
+  .add-form textarea:focus {
+	border-color: #4a90e2;
+	outline: none;
+  }
+  
+  .add-form textarea {
+	resize: vertical;
+	height: auto;
+  }
+  
+  .modal-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+  }
+  
+  .submitadd {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 120px;
+  }
+  
+  .submitadd:hover {
+	background-color: #45a049;
+  }
+  
+  .close-modal-btn {
+	padding: 10px 20px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 120px;
+  }
+  
+  .close-modal-btn:hover {
+	background-color: #d32f2f;
+  }
+  
+  
+  /* Optional: Overlay styles */
+  .ReactModal__Overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+  }
+  .buttons{
+	width: 104px;
+	align-items: center;
+
+  }
+
+  .delete-button {
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+	margin-left: 2px;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(255, 96, 96);
+  }
+
+  .edit-button {
+    background-color: rgb(5, 140, 230);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-button:hover {
+    background-color: rgb(5, 140, 230);
+  }
+  
+
